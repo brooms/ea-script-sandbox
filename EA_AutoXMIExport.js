@@ -26,7 +26,7 @@ function main()
     Repository.ClearOutput( "Script" );
     Session.Output("Starting XMI export...please wait...");
 
-	var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
     logFile = fso.OpenTextFile(logfilename, ForWriting, true);
 	
 	var modelEnumerator = new Enumerator(Repository.Models);
